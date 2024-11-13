@@ -1,0 +1,91 @@
+/* Загальні стилі для головної сторінки */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Стилі для головної сторінки */
+.animal-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.animal-item {
+    width: 250px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    height: 380px;  /* Збільшення висоти контейнера */
+}
+
+.animal-item:hover {
+    transform: translateY(-5px);  /* Ефект підняття при наведенні */
+}
+
+.animal-item img {
+    width: 100%;
+    height: 180px; /* Висота картинки */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.animal-item h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.animal-item p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Стилі для футера */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
